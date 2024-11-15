@@ -1,0 +1,109 @@
+*{
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+html , body , main{
+    height : 100%;
+    width : 100%;
+}
+
+.page1{
+    height : 100%;
+    width : 100%;
+    display: flex;
+    font-family: "Montserrat";
+    padding : 3vh;
+}
+
+.page1 .left{
+    width : 70%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page1 .left h1{
+    font-size: 6vw;
+}
+.page1 .left h1 span{
+    color :rgb(7, 249, 169);
+}
+.page1 form{
+    width : 30%;
+    height : max-content;
+    display: flex;
+    flex-direction: column;
+    padding : 3vh 5vh;
+    border : 2px solid rgb(7, 249, 169);
+    border-radius : 10px;
+    background-color: rgb(219, 199, 237);
+}
+
+.page1 form h1{
+    font-size: 4.5vh;
+    text-align: center;
+}
+.page1 form h3{
+    font-size: 2.2vh;
+    line-height: 3.5vh;
+}
+.page1 form input{
+    padding : 1.2vh 2vh;
+    margin : 1vh 0;
+    outline : none;
+    border : none;
+    border-radius: 3px;
+}
+.page1 form input:focus{
+    border-color:rgb(7, 249, 169);
+    box-shadow: 0 0 7px rgb(4, 188, 126);
+}
+.page1 form label input{
+    font-size: 2vh;
+}
+.page1 form .amount{
+    margin : 4vh 0;
+}
+.page1 form .amount input{
+    font-size: 1vh;
+    margin : 0  1vh;
+}
+
+.page1 form button{
+    padding : 2vh 4vh;
+    margin : 1vh 0;
+    font-size: 2vh;
+    width : 60%;
+    margin: 2vh auto;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(7, 249, 169);
+    border: none;
+    border-radius: 25px;
+    transition: 0.25s linear;
+}
+
+.page1 form button:hover{
+    background-color:rgb(15, 162, 113);
+}
+
+@media (max-width : 600px){
+    .page1 {
+        flex-direction: column;
+        height : max-content;
+    }
+
+    .page1 .left{
+        width : 100%;
+        height : 50vh;
+    }
+    .page1 .left h1{
+        font-size: 10vw;
+    }
+    .page1 form{
+       width : 100%;
+    }
+}
